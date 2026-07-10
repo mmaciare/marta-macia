@@ -23,7 +23,10 @@ h1, h2, h3, p { margin-top: 0; }
 .intro { padding: clamp(1.2rem, 3vw, 2.4rem) clamp(1rem, 7vw, 7rem) clamp(4rem, 8vw, 7.5rem); }
 .location-line { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); }
 .location-line span:first-child { color: var(--ink); }
-.intro-copy { max-width: 62rem; margin-top: clamp(4rem, 9vw, 8rem); }
+.intro-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(15rem, .65fr); align-items: end; gap: clamp(2rem, 6vw, 7rem); max-width: 88rem; margin-top: clamp(4rem, 9vw, 8rem); }
+.intro-copy { max-width: 62rem; }
+.intro-portrait { width: min(100%, 25rem); margin: 0 0 .2rem auto; border: 1px solid var(--line); background: #e8efff; aspect-ratio: 1 / 1.08; overflow: hidden; }
+.intro-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: saturate(.93) contrast(1.02); }
 .eyebrow { margin-bottom: 1.1rem; color: var(--blue); }
 h1 { max-width: 9.5ch; margin-bottom: 1.8rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(4rem, 9vw, 9.3rem); font-weight: 400; line-height: .84; letter-spacing: -.07em; }
 h1 em { color: var(--blue); font-style: italic; }
@@ -67,7 +70,8 @@ footer p { margin: 0; }
   .topbar { grid-template-columns: 1fr auto; }
   .topbar > p { display: none; }
   .services, .about, .contact { grid-template-columns: 1fr; }
-  .intro-copy { margin-top: 4.2rem; }
+  .intro-layout { grid-template-columns: 1fr; margin-top: 4.2rem; gap: 2.25rem; }
+  .intro-portrait { width: min(17rem, 70vw); margin: 0; order: -1; }
   .services, .about, .contact { gap: 2.5rem; }
   .services-content h2, .about h2 { margin-bottom: 2.8rem; }
 }
