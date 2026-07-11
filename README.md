@@ -3,7 +3,7 @@
 Web estática lista para publicar. Antes de subirla, reemplaza:
 
 - `hola@tu-dominio.com` en `index.html` por tu email profesional.
-- `https://tu-usuario.github.io/tu-repositorio/` en `robots.txt` y `sitemap.xml` por la URL final.
+- La URL pública final ya está configurada en `robots.txt` y `sitemap.xml`.
 - El nombre `Marta` si quieres usar marca o nombre completo.
 
 ## Publicarla en GitHub Pages
