@@ -1,58 +1,109 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> | Desarrollo de software</title>
-    <meta name="description" content="Marta Maciá desarrolla herramientas web y software a medida para negocios y equipos." />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Marta Maciá | Desarrollo de software" />
-    <meta property="og:description" content="Herramientas web claras, útiles y hechas a medida." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soluciones digitales a medida: reservas, automatización de procesos, agentes de IA y portales web que reducen trabajo repetitivo." />
+    <meta name="keywords" content="automatización IA, central de reservas, desarrollo web a medida, agentes telefónicos, Twilio, OpenAI, software a medida" />
+    <meta name="author" content="Marta" />
+    <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta property="og:title" content="Marta · Sistemas que trabajan contigo" />
+    <meta property="og:description" content="Reservas, atención y procesos internos que se resuelven solos." />
+    <meta name="theme-color" content="#f4f1e9" />
+    <title>Marta · Sistemas que trabajan contigo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"ProfessionalService","name":"Marta · Soluciones digitales a medida","description":"Automatización de procesos, centrales de reserva, agentes de IA y desarrollo de portales web a medida.","areaServed":"España","serviceType":["Automatización con IA","Desarrollo web a medida","Sistemas de reservas","Integraciones de negocio"]}
+    </script>
   </head>
-  <body><span>Elche · remoto</span>
-    <header class="topbar">
-      <a class="wordmark" href="#inicio" aria-label="Inicio">MM<span>.</span></a>
-      <p>Desarrollo de software</p>
-      <a class="top-email" href="mailto:mmaciareyes@gmail.com?subject=Consulta%20sobre%20una%20herramienta%20web">Contacto <span aria-hidden="true">↗</span></a>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">marta<span>_</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#servicios">Qué resuelvo</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="header-cta" href="#contacto">Hablemos <span>↗</span></a>
     </header>
 
-
     <main id="inicio">
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="location-line"><span>Elche · remoto</span></div>
-        <div class="intro-layout">
-          <div class="intro-copy">
-            <p class="eyebrow">Software a medida</p>
-            <h1 id="intro-title">Software que te hace ganar <em>tiempo.</em></h1>
-            <p class="summary">Construyo aplicaciones web para que reservas, clientes, tareas y datos dejen de vivir repartidos entre mensajes, hojas y herramientas que no encajan.</p>
-            <a class="main-action" href="mailto:mmaciareyes@gmail.com?subject=Consulta%20sobre%20una%20herramienta%20web">Cuéntame qué necesitas <span aria-hidden="true">↗</span></a>
-          </div>
-          <figure class="intro-portrait">
-            <img src="data:image/jpeg;base64,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
-          </figure>
+      <section class="hero">
+        <p class="eyebrow reveal">Soluciones digitales a medida · España</p>
+        <h1 class="reveal delay-1">Tu negocio no necesita <em>más tareas.</em><br />Necesita que las cosas <span>pasen solas.</span></h1>
+        <div class="hero-bottom reveal delay-2">
+          <p>Diseño sistemas que te liberan de lo repetitivo: atienden, reservan, organizan y conectan las piezas de tu día a día.</p>
+          <a class="round-link" href="#servicios" aria-label="Ver soluciones"><span>↓</span></a>
+        </div>
+        <div class="signal signal-one"></div><div class="signal signal-two"></div>
+      </section>
+
+      <section class="marquee" aria-label="Áreas de trabajo">
+        <div><span>RESERVAS</span><i>✳</i><span>IA QUE ATIENDE</span><i>✳</i><span>PORTALES WEB</span><i>✳</i><span>PROCESOS CONECTADOS</span><i>✳</i><span>RESERVAS</span><i>✳</i></div>
+      </section>
+
+      <section class="intro section-pad">
+        <p class="section-label">01 / EL PUNTO DE PARTIDA</p>
+        <div>
+          <h2>Cuando cada llamada, email o cambio de agenda depende de una persona, el negocio tiene un cuello de botella.</h2>
+          <p class="body-copy">No vendo una web de catálogo. Construyo herramientas con una función concreta: que tu negocio pueda atender mejor, responder antes y dedicar su tiempo a lo que sí necesita criterio humano.</p>
         </div>
       </section>
 
-
-      <section class="statement" aria-label="Propuesta de valor">
-        <p>Menos vueltas.<br />Más control.</p>
-        <span>Herramientas pensadas para el trabajo real.</span>
+      <section class="services section-pad" id="servicios">
+        <div class="section-top"><p class="section-label">02 / LO QUE PUEDE CAMBIAR</p><p class="small-note">Cada proyecto empieza por el problema, no por una plantilla.</p></div>
+        <article class="service-card coral">
+          <div class="card-number">01</div><div class="card-icon">⌁</div>
+          <div class="card-content"><h3>Reservas sin ida y vuelta</h3><p>Centrales de reserva y agendas a medida para que clientes, disponibilidad, pagos y recordatorios hablen el mismo idioma.</p><ul><li>Calendarios y reglas reales de negocio</li><li>Confirmaciones y recordatorios automáticos</li><li>Panel claro para tu equipo</li></ul></div>
+        </article>
+        <article class="service-card blue">
+          <div class="card-number">02</div><div class="card-icon">☏</div>
+          <div class="card-content"><h3>Un teléfono que también resuelve</h3><p>Asistentes de voz para recibir llamadas, entender la petición, consultar la agenda y cerrar una cita o derivar lo importante.</p><ul><li>IA conversacional con contexto</li><li>Registro y seguimiento de cada contacto</li></ul></div>
+        </article>
+        <article class="service-card lime">
+          <div class="card-number">03</div><div class="card-icon">↳</div>
+          <div class="card-content"><h3>Operaciones que fluyen</h3><p>Automatizaciones e integraciones que eliminan el copiar-pegar entre formularios, correo, hojas de cálculo, CRM y herramientas internas.</p><ul><li>Flujos diseñados para tu proceso</li><li>Datos conectados y trazables</li><li>Avisos cuando realmente hacen falta</li></ul></div>
+        </article>
+        <article class="service-card ink">
+          <div class="card-number">04</div><div class="card-icon">▣</div>
+          <div class="card-content"><h3>Portales útiles, no escaparates</h3><p>Áreas de cliente, plataformas de gestión y productos web con una experiencia sencilla para quien los usa cada día.</p><ul><li>Diseño y desarrollo a medida</li><li>Accesos, documentos y seguimiento</li><li>Preparado para crecer sin rehacerlo todo</li></ul></div>
+        </article>
       </section>
 
-
-      <section class="services" aria-labelledby="services-title">
-        <p class="section-label">Qué hago</p>
-        <div class="services-content">
-          <h2 id="services-title">No dejes que la gestión te quite tiempo.</h2>
-          <div class="service-list">
-            <article><div><h3>Reservas y clientes</h3><p>Agenda, disponibilidad, servicios, historial y avisos en un único sitio.</p></div><span aria-hidden="true">↗</span></article>
-            <article><div><h3>Gestión interna</h3><p>Paneles claros para seguir tareas, consultar datos y dejar de improvisar.</p></div><span aria-hidden="true">↗</span></article>
-            <article><div><h3>Procesos y automatización</h3><p>Integraciones y automatizaciones que reducen trabajo repetido sin añadir complejidad.</p></div><span aria-hidden="true">↗</span></article>
-          </div>
+      <section class="proof section-pad">
+        <p class="section-label">03 / EN LA PRÁCTICA</p>
+        <div class="proof-grid">
+          <div class="scenario"><p class="scenario-type">CLÍNICA · SERVICIOS · HOSTELERÍA</p><h3>“¿Tenéis hueco el jueves?”</h3><p>La llamada se atiende, se comprueba la disponibilidad, se confirma la reserva y el equipo sigue con su trabajo.</p><b>De llamada perdida a cita cerrada.</b></div>
+          <div class="scenario featured"><p class="scenario-type">EQUIPOS CON GESTIÓN DIARIA</p><h3>“¿Dónde está la información?”</h3><p>Un portal reúne el estado, los documentos y las acciones de cada cliente. Sin perseguir correos ni versiones.</p><b>De buscar datos a tener contexto.</b></div>
+          <div class="scenario"><p class="scenario-type">NEGOCIOS CON PROCESOS MANUALES</p><h3>“Otra vez hay que copiarlo.”</h3><p>Un dato entra una vez y activa el flujo correcto: asigna, avisa, registra y deja el siguiente paso preparado.</p><b>De repetir a supervisar.</b></div>
         </div>
       </section>
 
+      <section class="method section-pad" id="metodo">
+        <p class="section-label">04 / UNA FORMA SENCILLA DE EMPEZAR</p>
+        <div class="method-layout"><h2>No necesitas tener la solución pensada.<br /><em>Solo contarme dónde se atasca el día.</em></h2>
+          <ol><li><span>01</span><div><h3>Entendemos el recorrido</h3><p>Vemos qué ocurre ahora, quién interviene y qué coste tiene hacerlo manualmente.</p></div></li><li><span>02</span><div><h3>Diseñamos lo mínimo útil</h3><p>Definimos un sistema que resuelva de verdad sin añadir complejidad innecesaria.</p></div></li><li><span>03</span><div><h3>Construimos y afinamos</h3><p>Lo ponemos en marcha contigo, medimos y ajustamos hasta que encaje en el trabajo real.</p></div></li></ol>
+        </div>
+      </section>
 
-      <section class="about" aria-labelledby="about-title">
+      <section class="ai-note section-pad">
+        <p class="section-label">05 / IA CON LOS PIES EN EL SUELO</p>
+        <div><p class="big-copy">La IA no sustituye tu negocio. Se encarga de las primeras respuestas, clasifica, resume y mueve información para que las personas se ocupen de lo que importa.</p><p class="body-copy">Elijo la tecnología según el caso: por ejemplo, modelos de OpenAI para comprender y responder con criterio; voz y telefonía para conversaciones en tiempo real; y automatizaciones robustas entre tus herramientas. Sin “IA” de adorno.</p></div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <p class="eyebrow">¿Hablamos de ese proceso que te roba tiempo?</p>
+        <h2>Cuéntame qué ocurre.<br /><em>Le buscamos una salida.</em></h2>
+        <a class="contact-mail" href="mailto:mmaciareyes@gmail.com">mmaciareyes@gmail.com <span>↗</span></a>
+        <p class="contact-hint">mmaciareyes@gmail.com.</p>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> Marta</span><span>Soluciones que hacen el trabajo más ligero.</span><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
