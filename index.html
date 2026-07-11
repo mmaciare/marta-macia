@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero h1,.hero-bottom{position:relative;z-index:1}.system-pulse{position:absolute;right:-25px;top:120px;width:320px;height:230px;z-index:0;transform:scale(.76);transform-origin:top right}.pulse-dot{position:absolute;left:136px;top:99px;width:12px;height:12px;border-radius:50%;background:#f16d59;box-shadow:0 0 0 8px rgba(241,109,89,.16);animation:pulse 2.2s ease-out infinite}.pulse-label{position:absolute;padding:8px 10px;background:rgba(244,241,233,.8);border:1px solid rgba(21,32,30,.19);backdrop-filter:blur(7px);font:500 9px/1 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}.pulse-call{left:0;top:20px;transform:rotate(-4deg)}.pulse-calendar{right:0;top:84px;transform:rotate(3deg)}.pulse-done{left:23px;bottom:14px;transform:rotate(2deg);color:#43550d;border-color:rgba(67,85,13,.4);background:rgba(217,233,104,.78)}.marquee{border-top:4px solid #f16d59}.service-card{transition:background .35s ease,padding .35s ease}.service-card:hover{padding-left:54px}.scenario{transition:transform .3s ease,box-shadow .3s ease}.scenario:hover{transform:translateY(-9px);box-shadow:0 14px 0 rgba(21,32,30,.12)}@keyframes pulse{0%,100%{transform:scale(.84);opacity:.55}55%{transform:scale(1.26);opacity:1}}@media(max-width:760px){.system-pulse{transform:scale(.62);transform-origin:top right;right:-45px;top:120px}.service-card:hover{padding-left:10px}.scenario:hover{transform:none;box-shadow:none}}
+    </style>
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"ProfessionalService","name":"Marta · Soluciones digitales a medida","description":"Automatización de procesos, centrales de reserva, agentes de IA y desarrollo de portales web a medida.","areaServed":"España","serviceType":["Automatización con IA","Desarrollo web a medida","Sistemas de reservas","Integraciones de negocio"]}
     </script>
@@ -41,6 +44,12 @@
           <a class="round-link" href="#servicios" aria-label="Ver soluciones"><span>↓</span></a>
         </div>
         <div class="signal signal-one"></div><div class="signal signal-two"></div>
+        <div class="system-pulse" aria-hidden="true">
+          <span class="pulse-label pulse-call">Llamada entrante</span>
+          <span class="pulse-dot"></span>
+          <span class="pulse-label pulse-calendar">Agenda consultada</span>
+          <span class="pulse-label pulse-done">Reserva confirmada</span>
+        </div>
       </section>
 
       <section class="marquee" aria-label="Áreas de trabajo">
